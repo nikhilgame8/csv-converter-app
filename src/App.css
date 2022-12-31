@@ -36,3 +36,238 @@
     transform: rotate(360deg);
   }
 }
+h3, p{
+  margin:0px;
+  padding:0px;
+}
+
+.logo-holder{
+  margin: 8px;
+text-align:center;
+}
+.logo-5 h3 {
+color: blue;
+font-weight: 300;
+font-size: 35px;
+line-height: 0.6;
+font-family: 'Bangers', cursive;
+letter-spacing: 3px;
+}
+.logo-5 p {
+font-size: 14px;
+margin-left: 0;
+color: #545454;
+font-weight: 400;
+text-transform: capitalize;
+font-style: italic;
+font-family: 'Mansalva', cursive;
+position: relative;
+}
+.logo-5 p:before {
+position: absolute;
+content: '';
+width: 17px;
+height: 12px;
+background: #545454;
+left: 0px;
+top: 5px;
+}
+.logo-5 p:after {
+position: absolute;
+content: '';
+width: 17px;
+height: 12px;
+background: #545454;
+right: 0px;
+top: 5px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: aliceblue;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.mainSection{
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background-color:aliceblue;
+}
+.leftSection{   
+  display: block; 
+  z-index: 999;
+  position: fixed;
+  min-width: 280px;
+  max-width: 280px;
+  height: 100vh;
+  color: #fefefc;
+  font-weight: 300;
+  overflow: hidden;
+  transition: all .3s;  
+}
+.fixedDiv{
+  width: 25%;
+}
+.leftSection .card{
+  color: white;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+  background-color:#282c34;
+  height: 100%;
+  margin-bottom: 30px;
+  border-radius: 0 0 40px 0;
+}
+.leftSection .card div{
+  margin-top: 30px;
+}
+.leftSection .card div h4{
+  color: orange;
+  font-size:medium;
+}
+.leftSection .card div p{
+  font-size: small;
+}
+@media only screen and (max-width: 600px) {
+  .leftSection{
+    display: none;
+  }
+  .rightSection {
+    margin-left: 0;
+    width: 100%;
+}
+}
+@media (min-width: 1100px){
+  .rightSection {
+      margin-left: 340px;
+      width: calc(100% - 280px);
+  }
+}
+.rightSection{
+  padding: 0 12px;
+  min-height: 100vh;
+  transition: all .3s;
+}
+.rightSection .alert{
+  width: 100%;
+  text-align: center;
+}
+.table-content{
+  border-radius: 42px 42px 0 0;
+  background-color: #f3f9fe;
+  height: 100%;
+}
+.container-fluid{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.inputFilter{
+  border: none;
+  background-color: rgb(230, 228, 228);
+  border-radius: 5px;
+  padding: 6px;
+}
+.upload-container{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  border: 2px solid #282c34;
+  align-items: center;
+  justify-content: center;
+}
+.btnUpload {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.actionBtns{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+.exportBtn{
+  background-color: white;
+  border: 2px solid gray;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 8px 20px;
+  color: gray;
+  font-weight: bold;
+}
+.tableShow{
+  border-radius: 20px;
+    filter: drop-shadow(0px 7px 7px rgba(88,115,197,0.32));
+    background-color: #ffffff;
+    padding: 10px;
+}
+.table-responsive{
+  height: 550px;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+.table{
+  width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey; 
+}
